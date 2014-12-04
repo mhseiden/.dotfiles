@@ -10,8 +10,8 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
-"highlighting lines over 80 chars
-":match ErrorMsg '\%>80v.\+'
+"highlighting lines over 120 chars
+":match ErrorMsg '\%>120v.\+'
 
 " Set the proper tab / whitespace handling for a given programming language
 if has("autocmd")
@@ -69,7 +69,7 @@ inoremap jk <ESC>
 syntax on
 set background=dark
 "let g:solarized_termcolors = 256
-colorscheme solarized
+colorscheme molokai
 
 set autoindent     " always set autoindenting on
 set smartindent
@@ -93,8 +93,6 @@ map <C-K> <C-W><Up>
 
 set listchars=eol:↓,tab:→\ ,trail:↤,extends:>,precedes:<
 set list
-
-execute pathogen#infect()
 
 "nerdtree shortcut
 :nmap <c-k><c-b> :NERDTreeToggle<CR>

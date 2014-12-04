@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-config à la roy
+config à la max 
