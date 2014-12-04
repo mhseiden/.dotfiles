@@ -1,3 +1,3 @@
-ln -s ~/.dotfiles/vim           ~/.vim
-ln -s ~/.dotfiles/vimrc         ~/.vimrc
-ln -s ~/.dotfiles/gitconfig     ~/.gitconfig
+ln -fs ~/.dotfiles/vim           ~/.vim
+ln -fs ~/.dotfiles/vimrc         ~/.vimrc
+ln -fs ~/.dotfiles/gitconfig     ~/.gitconfig
