@@ -65,7 +65,7 @@ nnoremap ; :
 au FocusLost * :wa
 inoremap jk <ESC>
 
-" Solarized
+" Molokai
 syntax on
 set background=dark
 "let g:solarized_termcolors = 256
@@ -91,8 +91,8 @@ map <C-K> <C-W><Up>
 "spacebar in insert mode inserts a single character
 :nmap <Space> i_<Esc>r
 
-set listchars=eol:↓,tab:→\ ,trail:↤,extends:>,precedes:<
-set list
+" set listchars=eol:↓,tab:→\ ,trail:↤,extends:>,precedes:<
+" set list
 
 "nerdtree shortcut
 :nmap <c-k><c-b> :NERDTreeToggle<CR>
