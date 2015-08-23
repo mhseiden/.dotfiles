@@ -5,9 +5,9 @@ set nocompatible
 set modelines=0
 
 "tab settings
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 "highlighting lines over 120 chars
@@ -31,6 +31,7 @@ syntax on
 set nu
 set encoding=utf-8
 set scrolloff=3
+set relativenumber
 set showmode
 set showcmd
 set hidden
