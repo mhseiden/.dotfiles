@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/maxseiden/Projects/pixel-sorting-c/src'
-let g:netrw_dirhist_2='/Users/maxseiden/Projects/reactive-web-audio/bower_components'
-let g:netrw_dirhist_3='/Users/maxseiden/Projects/reactive-web-audio/node_modules'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/maxseiden/Projects/ast-js'
+let g:netrw_dirhist_2='/Users/maxseiden/Projects/reactive-web-audio/coffee/compiler/planner'
+let g:netrw_dirhist_3='/Users/maxseiden/Projects/reactive-web-audio/coffee/compiler/planner/opcodes'
+let g:netrw_dirhist_4='/Users/maxseiden/Projects/reactive-web-audio/coffee/compiler/planner'

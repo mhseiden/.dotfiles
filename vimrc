@@ -10,25 +10,9 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
-"highlighting lines over 120 chars
-":match ErrorMsg '\%>120v.\+'
-
-" Set the proper tab / whitespace handling for a given programming language
-if has("autocmd")
-    " enable file type search
-    filetype plugin on
-    " use filetype indent
-    filetype indent on
-    " Consistent with the Linux Kernel Coding Style Guidelines
-    autocmd FileType c,cpp,opencl set noexpandtab tabstop=8 shiftwidth=8 textwidth=78
-    autocmd FileType css,sass,html  set noexpandtab tabstop=8 shiftwidth=8 textwidth=78
-    autocmd FileType python,lua set expandtab tabstop=4 shiftwidth=4 softtabstop=4 textwidth=79
-    autocmd FileType coffee,rs,rust set noexpandtab tabstop=2 shiftwidth=2 softtabstop=2 textwidth=80
-    autocmd FileType jade set noexpandtab tabstop=2 shiftwidth=2 softtabstop=2 textwidth=80
-endif
-
 "general settings
 syntax on
+set list
 set nu
 set encoding=utf-8
 set scrolloff=3
