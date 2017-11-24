@@ -36,6 +36,7 @@ set cursorline
 
 set laststatus=2
 let g:rustfmt_autosave = 1
+let g:javascript_plugin_flow = 1
 
 " type specific settings
 autocmd FileType go setlocal nolist
