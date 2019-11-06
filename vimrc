@@ -19,6 +19,9 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'elzr/vim-json'
 Plugin 'vim-scripts/SQLUtilities'
 Plugin 'vim-scripts/Align'
+Plugin 'tarekbecker/vim-yaml-formatter'
+Plugin 'leafgarland/typescript-vim'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -32,14 +35,17 @@ set number
 set ruler
 set relativenumber
 set list
-set cursorline
+set cursorline!
 
 set laststatus=2
 let g:rustfmt_autosave = 1
 let g:javascript_plugin_flow = 1
+let g:yaml_formatter_indent_collection=1
+let g:go_fmt_autosave = 1
 
 " type specific settings
 autocmd FileType go setlocal nolist
 
 autocmd Filetype javascript setlocal expandtab ts=2 sts=2 sw=2
+autocmd Filetype typescript setlocal expandtab ts=2 sts=2 sw=2
 autocmd BufNewFile,BufRead *.json setlocal expandtab ts=2 sts=2 sw=2
