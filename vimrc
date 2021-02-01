@@ -21,6 +21,7 @@ Plugin 'vim-scripts/SQLUtilities'
 Plugin 'vim-scripts/Align'
 Plugin 'tarekbecker/vim-yaml-formatter'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'peitalin/vim-jsx-typescript'
 
 
 " All of your Plugins must be added before the following line
@@ -40,9 +41,20 @@ set cursorline!
 set laststatus=2
 let g:rustfmt_autosave = 1
 
+set maxmemtot=2000000
+set maxmempattern=1000000
+
+" set filetypes as typescriptreact
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
+
 " type specific settings
 autocmd FileType go setlocal nolist
 
+autocmd Filetype html setlocal expandtab ts=2 sts=2 sw=2
+autocmd Filetype css setlocal expandtab ts=2 sts=2 sw=2
+
 autocmd Filetype javascript setlocal expandtab ts=2 sts=2 sw=2
 autocmd Filetype typescript setlocal expandtab ts=2 sts=2 sw=2
+autocmd Filetype typescriptreact setlocal expandtab ts=2 sts=2 sw=2
+autocmd Filetype *.tsx,*.ts,*.js setlocal expandtab ts=2 sts=2 sw=2
 autocmd BufNewFile,BufRead *.json setlocal expandtab ts=2 sts=2 sw=2
